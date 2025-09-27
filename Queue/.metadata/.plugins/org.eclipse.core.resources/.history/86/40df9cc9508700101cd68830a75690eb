@@ -1,0 +1,18 @@
+
+public class App
+{
+	public static void main(String[] args)
+	{
+		QueueLinkedList<String> queue=new QueueLinkedList<String>();
+		queue.enqueue("Amit");
+		queue.enqueue("Rahul");
+		queue.enqueue("Pankaj");
+		queue.enqueue("Hemant");
+		queue.enqueue("Ravi");
+		
+		System.out.println(queue.clear());
+		System.out.println(queue.size());
+		System.out.println("-------");
+		queue.display();
+	}
+}

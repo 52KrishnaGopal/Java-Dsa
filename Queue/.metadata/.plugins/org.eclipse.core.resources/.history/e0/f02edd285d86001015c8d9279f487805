@@ -1,0 +1,21 @@
+
+public class App
+{
+	public static void main(String[] args)
+	{
+		QueueArray<String> queue=new QueueArray<String>(5);
+//		System.out.println(queue.isEmpty());
+		queue.enqueue("Amit");
+		queue.enqueue("Gopal");
+		queue.enqueue("Keshav");
+		queue.enqueue("Pankaj");
+		queue.enqueue("Tarun");
+		
+		System.out.println(queue.dequeue());
+		System.out.println("-----------"+queue.size());
+		
+		queue.display();
+		
+	}
+
+}

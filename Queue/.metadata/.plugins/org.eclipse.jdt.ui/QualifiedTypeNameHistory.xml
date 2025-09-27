@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="QueueArray"/>
+    <fullyQualifiedTypeName name="java.awt.Frame"/>
+    <fullyQualifiedTypeName name="javax.security.auth.callback.ConfirmationCallback"/>
+    <fullyQualifiedTypeName name="QueueLinkedList"/>
+    <fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
+</qualifiedTypeNameHistroy>

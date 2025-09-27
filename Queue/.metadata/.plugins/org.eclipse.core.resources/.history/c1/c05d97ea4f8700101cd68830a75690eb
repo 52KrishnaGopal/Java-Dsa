@@ -1,0 +1,81 @@
+import javax.xml.crypto.Data;
+
+public class QueueLinkedList<E> 
+{
+	class Node
+	{
+		E data;
+		Node next;
+	}
+	private Node fontNode;
+	private Node rearNode;
+	private int queueSize;
+	
+	public void enqueue(E element)
+	{
+		Node newNode=new Node();
+		newNode.data=element;
+		queueSize++;
+		if(rearNode==null)
+		{
+			rearNode=fontNode=newNode;
+			return;
+		}
+		rearNode.next=newNode;
+		rearNode=newNode;
+	}
+	public E dequeue()
+	{
+		if(fontNode==null)
+			return null;
+		
+		Node cur=fontNode;
+		Node curN=cur.next;
+		cur.next=null;
+		fontNode=curN;
+		return cur.data;
+	}
+	public E front()
+	{
+		if(fontNode==null)
+			return null;
+		return fontNode.data;
+	}
+	public boolean isEmpty()
+	{
+		return fontNode==null;
+	}
+	public int size()
+	{
+		return queueSize;
+	}
+	public void clear()
+	{
+		if(fontNode==null)
+		{
+			System.out.println("Queue is empty.");
+			return;
+		}
+		int h=size();
+		Node cur=fontNode;
+		for(int i=0;i<=h;i++)
+		{
+			cur=cur.next=null;
+		}
+	
+	}
+	public void display()
+	{
+		if(rearNode==null)
+		{
+			System.out.println("Queue is empty..");
+			return;
+		}
+		Node cur=fontNode;
+		while(cur!=null)
+		{
+			System.out.println(cur.data);
+			cur=cur.next;
+		}
+	}
+}

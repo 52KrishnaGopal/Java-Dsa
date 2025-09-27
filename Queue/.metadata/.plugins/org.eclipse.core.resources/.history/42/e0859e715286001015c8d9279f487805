@@ -1,0 +1,11 @@
+
+public class App
+{
+	public static void main(String[] args)
+	{
+		QueueArray<String> queue=new QueueArray<String>();
+		System.out.println(queue.isEmpty());
+		
+	}
+
+}

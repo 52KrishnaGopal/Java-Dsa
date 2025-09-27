@@ -1,0 +1,73 @@
+
+public class QueueArray<E> 
+{
+	private E[] data;
+	private int font;
+	private int rear;
+	private static final  int queueSize=100;
+	
+	public QueueArray(int size)
+	{
+		data=(E[])new Object[size];
+		font=-1;
+		rear=-1;
+	}
+	public QueueArray()
+	{
+		this(queueSize);
+	}
+	
+	public void enqueue(E element)
+	{
+		if(rear==data.length-1)
+		{
+			System.out.println("Queue is Full");
+			return;
+		}
+		data[++rear]=element;
+		font++;
+
+	}
+	public E dequeue()
+	{
+		if(font==-1)
+		{
+			System.out.println("Queue is empty.");
+			return null;
+		}
+		E fisrt=data[font];
+		int h=size();
+		for(int i=0;i<h-1;i++)
+		{
+			data[i]=data[i+1];
+		}
+		data[font]=null;
+		rear--;
+		return fisrt;
+	}	
+		
+	public int size()
+	{
+		int count=-1;
+		if(rear==-1)
+			return count;
+		for(int i=font;i<=rear;i++)
+		{
+			count++;
+		}
+		return count;
+	
+	}
+	public void display()
+	{
+		if(rear==-1)
+		{
+			System.out.println("Queue is empty.");
+			return;
+		}
+		for(int i=0;i<=rear;i++)
+		{
+			System.out.println(data[i]);
+		}
+	}
+}

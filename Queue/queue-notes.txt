@@ -1,0 +1,36 @@
+Queue is a linear data structure that follwos the FIDI(First in, First out) principle
+It means the element inserted first is the first element to be removed.It is similar to real-world queue, like a line of people waiting in a ticket counter
+
+Types of Queues
+===============
+1)Simple Queue:Elements are inserted at the read end and removed from the front end
+
+2)Circular Queue:The last position is connected to the first to make a circular structure
+
+3)Deque(Dobule-Ended Queue):Insertion and deletion can happen from both ends
+
+4)Priority Quere:Elements are removed based on the priority rather than insertion order
+
+Operations on Queue
+===================
+1)Enqueue():Adds and element from the rear end
+2)Dequeue():Removed an element from the front end
+3)Front():Returns the front/first element without removing it
+4)Rear():Returns the rear/last element without removing it
+etc
+Implementation of Queue
+========================
+We can implement it by follwing two ways
+1)Using arrays
+2)Using linkedlist
+
+
+
+
+
+
+
+
+
+
+
